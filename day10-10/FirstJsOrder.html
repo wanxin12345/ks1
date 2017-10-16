@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+      <button onclick="alert('第一个js小程序')">点击</button>
+      <button>点击2</button>
+      <button onclick="thirdTest()">点击3</button>
+</body>
+      <script>
+          var bt=document.getElementsByTagName("button");
+          bt[1].onclick=function(){
+              alert("点击2:第一个js小程序");
+          }
+          function thirdTest(){
+              alert("点击3:第一个js小程序");
+          }
+      </script>
+</html>

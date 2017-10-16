@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/一组div.css">
+    <script>
+        window.onload=function(){
+            alert(document.getElementsByTagName('div').length);
+            document.getElementsByTagName('p')[0].innerHTML=document.getElementsByTagName('div').length;
+            console.log(document.getElementsByTagName('div').length);
+        }
+    </script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <p></p>
+</body>
+</html>

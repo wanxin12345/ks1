@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload= function () {
+            var div=document.getElementById("div");
+            var a=document.getElementById("a");
+            var p=document.getElementById("p");
+
+            div.onclick= function () {
+                alert(this.innerHTML);
+                this.style.background="orange";
+            }
+            a.onclick= function () {
+                alert(this.innerHTML);
+                this.style.background="orange";
+            }
+            p.onclick= function () {
+                alert(this.innerHTML);
+                this.style.background="orange";
+            }
+        }
+    </script>
+    <style>
+        div,a,p{
+        background: deeppink;
+        width: 100px;
+        height: 100px;;
+        }
+    </style>
+
+</head>
+<body>
+<div id="div">我是一个div</div>
+<a id="a">我是一个a</a>
+<p id="p">我是一个p</p>
+</body>
+</html>

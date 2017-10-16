@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/一组div.css">
+    <script>
+        window.onload= function () {
+            var div=document.getElementsByTagName("div");
+            for(var i=0;i<div.length;i++){
+                  div[i].onclick= function () {
+                      this.style.background="#654584";
+                  }
+            }
+
+            for(var a=0;a<div.length;a++){
+                alert(a);
+                div[a].onclick= function () {
+                    this.innerHTML=a;
+                }
+            }
+        }
+    </script>
+    <style>
+        p{
+            width: 100px;
+            height: 100px;
+            background: #545845;
+        }
+    </style>
+</head>
+<body>
+     <div>1</div>
+     <div>2</div>
+     <div>3</div>
+     <p></p>
+     <p></p>
+     <p></p>
+</body>
+<script src="js/一组div.js"></script>
+</html>

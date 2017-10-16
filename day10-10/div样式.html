@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div样式</title>
+    <link rel="stylesheet" href="css/divStyle2.css" type="text/css">
+    <style>
+        /*@import方法引入css样式*/
+        @import "css/divStyle1.css";
+        /*并集选择器*/
+        .box1,.box2{
+            width: 100px;
+            height: 100px;;
+        }
+
+        .box1{
+            background-color: aqua;
+        }
+        .box2{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+     <p>通过style标签下写样式</p>
+     <div class="box1"></div>
+     <div class="box2"></div>
+     <p>通过@import引入css样式</p>
+     <div class="box1_1"></div>
+     <div class="box2_1"></div>
+     <p>通过link方法引入css样式</p>
+     <div class="box1_2"></div>
+     <div class="box2_2"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            display: none;
+            background: #542312;
+        }
+    </style>
+    <script>
+        var div=document.getElementsByTagName("div");
+        var bt=document.getElementsByTagName("button");
+        window.onload= function () {
+            var i=0;
+            bt[0].onclick= function () {
+                i++;
+                if(i%2){
+                    div[0].style.display="block";
+                }else{
+                    div[0].style.display="none";
+                }
+            }
+            bt[1].onclick= function () {
+                if(div[1].style.display=='block'){
+                    div[1].style.display="none";
+                }else{
+                    div[1].style.display="block";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+     <button>切换显示</button>
+     <div></div>
+     <button>切换显示1</button>
+     <div></div>
+     <button>切换显示2</button>
+     <div></div>
+</body>
+     <script src="js/必应登录2.js"></script>
+</html>

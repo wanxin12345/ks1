@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="" rel="stylesheet" type="text/css" id="link">
+    <script>
+        var allNum=3;
+        var i=0;
+        setInterval(function () {
+            i++;
+            if(i==allNum){
+                i=0;
+            }
+            if(i==0){
+                document.getElementById("link").href="css/skin1.css";
+            }else if(i==1){
+                document.getElementById("link").href="css/skin2.css";
+            }else if(i==2){
+                document.getElementById("link").href="css/skin3.css";
+            }
+        },3000)
+    </script>
+</head>
+<body>
+</body>
+</html>

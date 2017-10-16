@@ -1,0 +1,121 @@
+     总结:
+	   1.JS:
+	      javascript:(简称js)
+		      是一种客户端脚本语言.可以用来写动画,写特效,做交互
+			  js是操作样式的
+			  弱类型语言
+			  
+	   2.js
+	       1.ECMAScript:解释型,语法
+		   2.BOM:浏览器对象模型(Browser object model)
+		   3.DOM:文档对象模型(document object model)
+	          
+	   3.在js中"="号的用法
+           1."="  用来赋值,将右边的值赋给左边   eg: var a=12;
+           2."=="	用来比较值是否相等,返回的值是boolean值,即ture或者false
+           3."==="	  用来比较值的类型和值都相等,返回的值也是布尔值
+       4.在js事件中前面都有
+	        on   :    即在什么上面   eg:onclick 点击事件  onmousover  鼠标移到上面的事件
+			.    :    的     eg: 对象.方法   对象.属性  
+			get  :    获取   eg:getElementById("");
+			Element  :   元素
+			By   :    通过什么类型找元素
+			Id   :    标签的id
+			ClassName   :   标签的类名
+			TagName     :   标签名
+			alert()     :   这是js中的方法,弹出信息,括号内放入要弹出的信息
+	   5.js里面的任何样式都可以更改
+         任何元素都可以绑定时间/添加事件
+         对于将事件加给谁,应该先想到这个事件由什么产生,就加到谁上面
+         修改样式怎么写:样式的修改要根据css样式来更改,css怎么书写,js就怎么写
+       6.对于函数
+             function
+                函数分为两个步骤:
+                     一. 定义
+                     二. 调用	   (二者缺一不可)	
+                函数的定义:
+                         function show(){
+						     //这里写代码
+						 }				
+				函数的调用:函数名加小括号
+                         show();
+             
+       7.变量: 
+              就相当于给某个元素或者某句话起一个别名	   
+              变量的格式:
+			          var 别名=别名值
+					  
+	   8.window.onload:   
+	          这是window对象
+			  onload是页面加载完成后就执行
+                    
+	   9.style 是对对象的样式操作
+               操作的是行间样式	   
+	   10.判断:
+            if(条件){
+			    条件成立执行的语句
+			}else{
+			    条件不成立执行的语句
+			}
+			eg:
+			if(太阳是圆的吗){
+			     true
+			}else{
+			      false
+			}
+					
+       11.换皮肤的做法
+	          1.通过类(class)名称     class=>className
+              2.直接操作css改变样式    对象.style.background
+              3.改变link的值          (推荐)通过改变link的href值改变
+	   12.在JS中class是JS的一个保留字,不能直接使用,用className
+	   13.body的简写:document.body
+	   14.this  是指当前发生事件的元素(对象)
+	   15.innerHTML: 元素的全部内容;不但可以获取,还可以设置(赋值)(从对象的起始位置到终止位置的全部内容)
+	      innerText: 指定对象中的文本(去除了标签)  ***这是ie的自己的属性  ie和chrome支持  部分浏览器也可实现
+       16.通过事件调用的函数不加括号   eg: function show(){alert(1)}    var a=show;  alert(a)   
+       17.length :长度,个数
+	      通过标签名获取到一组元素[获取到的不止一个,多个元素]一组或多个元素要配合下标使用
+	      下标的计数从0开始,[number]   eg:div[0];
+	   18.i++等同于i=i+1;    i+=5   等同于  i=i+5
+	   19.事件: 用户的操作 
+	            onclick:点击事件 
+				onmousover:当鼠标移入的时候触发
+				onmouseout:当鼠标移出的时候触发
+	   20.在input和textarea中有个属性  
+             自动获焦:autofocus
+       21.对于a标签不想让其跳转的时候可以在其属性href中设置
+              href="javascript:void(0)"	 或者  href="javascript:"
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+						 
+						 
+						 

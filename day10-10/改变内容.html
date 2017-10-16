@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div,p,h1{
+            width:100px;
+            height: 100px;
+            background: gold;
+            color:#fff;
+        }
+    </style>
+    <script>
+          window.onload= function () {
+              var div=document.getElementsByTagName("div");
+              var p=document.getElementsByTagName("p");
+              var h1=document.getElementsByTagName("h1");
+
+              div[0].onclick= function () {
+                  this.innerHTML="再见";
+                  this.style.background="red";
+              }
+              p[0].onclick= function () {
+                  this.innerHTML="再见";
+                  this.style.background="red";
+              }
+              h1[0].onclick= function () {
+                  this.innerHTML="再见";
+                  this.style.background="red";
+              }
+          }
+    </script>
+</head>
+<body>
+    <div>你好,我是一个div</div>
+    <p>你好我是一个p</p>
+    <h1>你好我是一个h1</h1>
+</body>
+</html>

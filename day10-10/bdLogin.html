@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height:100px;
+            background: #988795;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+     <input type="button" value="登录" onclick="document.getElementById('div').style.display='block';">
+     <div id="div"></div>
+
+     <input type="button" value="登录" onclick="showdiv()">
+     <div></div>
+
+     <input type="button" value="登录">
+     <div></div>
+</body>
+     <script>
+         var div=document.getElementsByTagName("div");
+         var input=document.getElementsByTagName("input");
+         function showdiv(){
+             div[1].style.display='block';
+         }
+         input[2].onclick= function () {
+             div[2].style.display="block";
+         }
+     </script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hao123_11</title>
+    <style>
+        .pink{
+            background: pink;
+        }
+        .orange{
+            background: orange;
+        }
+        .gray{
+            background: gray;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var bt=document.getElementsByTagName("button");
+            var body=document.body;
+
+            bt[0].onclick=function(){
+                body.className="pink";
+            }
+            bt[1].onclick=function(){
+                body.className="orange";
+            }
+            bt[2].onclick= function () {
+                body.className="gray";
+            }
+        }
+    </script>
+</head>
+<body class="pink">
+     <button>皮肤1</button>
+     <button>皮肤2</button>
+     <button>皮肤3</button>
+</body>
+</html>

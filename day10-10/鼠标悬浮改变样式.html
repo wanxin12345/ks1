@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .big{
+            width: 300px;
+            height: 300px;
+            background: #254545;
+        }
+        .small{
+            width: 100px;
+            height: 100px;
+            background: #4fd425;
+        }
+        .big1{
+            width: 200px;
+            height: 200px;
+            background: #548555;
+        }
+        .small1{
+            width: 100px;
+            height: 100px;
+            background: #f45647;
+        }
+        .a1{
+            display: block;
+            background: #545845;
+            width: 100px;
+            height:100px ;
+        }
+        .a2{
+            background: deeppink;
+            width: 100px;
+            height:100px ;
+        }
+    </style>
+</head>
+<body>
+     <div class="small"></div>
+     <p class="small1"></p>
+     <a class="a2">54</a>
+</body>
+<script>
+    var div=document.getElementsByTagName("div");
+    var p=document.getElementsByTagName("p");
+    var a=document.getElementsByTagName("a");
+    div[0].onmouseover= function () {
+        this.className='big';
+    }
+    div[0].onmouseout= function () {
+        this.className='small';
+    }
+    p[0].onmouseover= function () {
+        this.className='big1';
+    }
+    p[0].onmouseout= function () {
+        this.className='small1';
+    }
+    a[0].onmouseover= function () {
+        this.className='a1';
+    }
+    a[0].onmouseout= function () {
+        this.className='a2';
+    }
+</script>
+</html>

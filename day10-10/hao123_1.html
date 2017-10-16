@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hao123换肤_1</title>
+    <style>
+        .darkcyan{
+            background-color: darkcyan;
+        }
+        .blueviolet{
+            background-color: blueviolet;
+        }
+        .cornflowerblue{
+            background-color: cornflowerblue;
+        }
+
+    </style>
+    <script>
+        window.onload=function(){
+            var body=document.getElementById("body");
+            var bt_1=document.getElementById("bt_1");
+            var bt_2=document.getElementById("bt_2");
+            var bt_3=document.getElementById("bt_3");
+
+            bt_1.onclick=function()
+            {
+                 body.className="darkcyan";
+            }
+            bt_2.onclick=function()
+            {
+                body.className="blueviolet";
+            }
+            bt_3.onclick=function()
+            {
+                body.className="cornflowerblue";
+            }
+        }
+    </script>
+</head>
+<body class="darkcyan" id="body">
+     <input type="button" value="背景1" id="bt_1"><br>
+     <input type="button" value="背景2" id="bt_2"><br>
+     <input type="button" value="背景3" id="bt_3">
+</body>
+</html>

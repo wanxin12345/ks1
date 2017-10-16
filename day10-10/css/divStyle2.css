@@ -1,0 +1,12 @@
+.box1_2,.box2_2{
+    width: 100px;
+    height:100px;
+}
+.box1_2{
+    background-color: cadetblue;
+    border: 1px solid #eee;
+}
+.box2_2{
+    background-color: brown;
+    border: 1px solid #eeeeee;
+}

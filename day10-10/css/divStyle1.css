@@ -1,0 +1,13 @@
+/*²¢¼¯Ñ¡Ôñ*/
+.box1_1,.box2_1{
+    width: 100px;
+    height: 100px;
+}
+.box1_1{
+    background-color: blueviolet;
+    border: 1px solid #ddd;
+}
+.box2_1{
+    background-color: bisque;
+    border:1px solid #ddd;
+}

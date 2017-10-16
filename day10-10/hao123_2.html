@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hao123换肤_2</title>
+      <style>
+          .pink{
+              background: pink;
+          }
+          .purple{
+              background: purple;
+          }
+          .orange{
+              background: orange;
+          }
+      </style>
+      <script>
+          window.onload=function(){
+              var bt_1=document.getElementById("bt_1");
+              var bt_2=document.getElementById("bt_2");
+              var bt_3=document.getElementById("bt_3");
+              var mbody=document.getElementById("body");
+
+              bt_1.onclick=function(){
+                  mbody.className="pink";
+              }
+              bt_2.onclick=function(){
+                  mbody.className="purple";
+              }
+              bt_3.onclick=function(){
+                  mbody.className="orange";
+              }
+          }
+      </script>
+</head>
+<body id="body" class="pink">
+      <button id="bt_1">皮肤1</button>
+      <button id="bt_2">皮肤2</button>
+      <button id="bt_3">皮肤3</button>
+</body>
+</html>
