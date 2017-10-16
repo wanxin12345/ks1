@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload= function () {
+            var aa=document.getElementsByTagName("input");
+            var num=0;    //用来计数   最后判断是否有未选中的
+            aa[0].onclick= function () {
+                    if(aa[0].checked==true){
+                        for(var i=1;i<aa.length;i++){
+                            aa[i].checked=true;
+                        }
+                        num = aa.length - 1;
+                        document.title = num;
+                    }else{
+                        for(var i=1;i<aa.length;i++){
+                            aa[i].checked=false;
+                        }
+                        num = 0;
+                        document.title = num;
+                    }
+
+            }
+
+            for(var i=1;i<aa.length;i++){
+                aa[i].onclick= function () {
+                    if(this.checked==true){
+                        num++;
+                    }else{
+                        num--;
+                    }
+                    if(num==aa.length-1){
+                        aa[0].checked=true;
+                    }else{
+                        aa[0].checked=false;
+                    }
+                    document.title=num;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="checkbox"><br>
+<hr>
+<input type="checkbox">
+<input type="checkbox">
+<input type="checkbox">
+<input type="checkbox"><br>
+<input type="checkbox">
+<input type="checkbox">
+<input type="checkbox">
+<input type="checkbox">
+</body>
+</html>
