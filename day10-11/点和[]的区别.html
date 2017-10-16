@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/一组div.css">
+    <script>
+        window.onload = function(){
+            var div = document.getElementsByTagName('div');
+            var i=0;
+            var a="300px"
+            while(i<div.length){
+                div[i].onclick= function () {
+                    this.style.width=a;
+                }
+                i++;
+            }
+        }
+    </script>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

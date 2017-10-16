@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: #f88;
+            float: left;
+            margin: 10px;
+        }
+        a{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: #666;
+            margin: 10px;
+        }
+        p{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: #35dd54;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        window.onload= function () {
+            var div=document.getElementsByTagName("div");
+            var a=document.getElementsByTagName("a");
+            var p=document.getElementsByTagName("p");
+            for(var i=0;i<div.length;i++){
+                div[i].onclick= function () {
+                    for(var i=0;i<div.length;i++){
+                        div[i].style.background="#f88";
+                    }
+                    this.style.background="#36c";
+                }
+            }
+            for(var i=0;i<a.length;i++){
+                a[i].onclick= function () {
+                    for(var i=0;i<a.length;i++){
+                        a[i].style.background="#666";
+                    }
+                    this.style.background="#98ad54";
+                }
+            }
+            for(var i=0;i<p.length;i++){
+                p[i].onclick= function () {
+                    for(var i=0;i<p.length;i++){
+                        p[i].style.background="#35dd54";
+                    }
+                    this.style.background="#eee";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+<a></a><a></a><a></a><a></a><a></a>
+<a></a><a></a><a></a><a></a><a></a>
+<a></a><a></a><a></a><a></a><a></a>
+<a></a><a></a><a></a><a></a><a></a>
+<p></p><p></p><p></p><p></p><p></p>
+<p></p><p></p><p></p><p></p><p></p>
+<p></p><p></p><p></p><p></p><p></p>
+<p></p><p></p><p></p><p></p><p></p>
+
+</body>
+</html>

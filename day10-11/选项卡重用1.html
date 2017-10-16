@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/choose.css">
+    <script>
+        window.onload= function () {
+            tan("main1","onclick");
+            tan("main2","onmouseover");
+        }
+        function tan(cl,s){
+            var mians=document.getElementById(cl);
+            var a=mians.getElementsByTagName("a");
+            var div=mians.getElementsByClassName("show");
+
+            for(var i=0;i< a.length;i++){
+                 a[i].index=i;
+                 a[i][s]= function () {
+                     for(var i=0;i< a.length;i++){
+                         a[i].className="";
+                         div[i].style.display="none";
+                     }
+                     this.className="active";
+                     div[this.index].style.display="block";
+                 }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="main1" id="main1">
+    <div class="choose">
+        <a href="javascript:void(0)" class="active">选项1</a>
+        <a href="javascript:void(0)">选项2</a>
+        <a href="javascript:void(0)">选项3</a>
+        <a href="javascript:void(0)">选项4</a>
+    </div>
+    <div class="maininfo">
+        <div class="show" style="display: block;">我是div1</div>
+        <div class="show">我是div2</div>
+        <div class="show">我是div3</div>
+        <div class="show">我是div4</div>
+    </div>
+</div>
+<div class="main2" id="main2">
+    <div class="choose">
+        <a href="javascript:void(0)" class="active">选项1</a>
+        <a href="javascript:void(0)">选项2</a>
+        <a href="javascript:void(0)">选项3</a>
+        <a href="javascript:void(0)">选项4</a>
+    </div>
+    <div class="maininfo">
+        <div class="show" style="display: block;">我是div1</div>
+        <div class="show">我是div2</div>
+        <div class="show">我是div3</div>
+        <div class="show">我是div4</div>
+    </div>
+</div>
+</body>
+</html>

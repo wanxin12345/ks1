@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: #f88;
+            float: left;
+            margin: 10px;
+        }
+        a{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: #666;
+            margin: 10px;
+        }
+        p{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: #35dd54;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        window.onload= function () {
+            var div=document.getElementsByTagName("div");
+            var a=document.getElementsByTagName("a");
+            var p=document.getElementsByTagName("p");
+            var i=0;
+            var aa=0;
+            var bb=0;
+
+            while(i<div.length){
+                div[i].onclick= function () {
+                    var j=0;
+                    while(j<div.length){
+                        div[j].style.background="#f88";
+                        j++;
+                    }
+                    this.style.background="blue";
+                }
+                i++;
+            }
+            while(aa<a.length){
+                a[aa].onclick= function () {
+                    var o=0;
+                    while(o<div.length){
+                        a[o].style.background="#666";
+                        o++;
+                    }
+                    this.style.background="blue";
+                }
+                aa++;
+            }
+            while(bb<div.length){
+                p[bb].onclick= function () {
+                    var q=0;
+                    while(q<div.length){
+                        p[q].style.background="#35dd54";
+                        q++;
+                    }
+                    this.style.background="blue";
+                }
+                bb++;
+            }
+        }
+    </script>
+</head>
+<body>
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+<a></a><a></a><a></a><a></a><a></a>
+<a></a><a></a><a></a><a></a><a></a>
+<a></a><a></a><a></a><a></a><a></a>
+<a></a><a></a><a></a><a></a><a></a>
+<p></p><p></p><p></p><p></p><p></p>
+<p></p><p></p><p></p><p></p><p></p>
+<p></p><p></p><p></p><p></p><p></p>
+<p></p><p></p><p></p><p></p><p></p>
+</body>
+</html>

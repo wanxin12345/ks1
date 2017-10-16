@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload= function () {
+            var p=document.getElementsByTagName("p");
+            var b=document.getElementsByTagName("b");
+            var ii=document.getElementsByTagName("i");
+            for(var i=0;i< p.length;i++){
+                p[i].onclick= function () {
+                    alert(this.aa);
+                }
+            }
+            for(var i=0;i<b.length;i++){
+                b[i].onclick= function () {
+                    alert(this.aa);
+                }
+            }
+            for(var i=0;i< ii.length;i++){
+                ii[i].onclick= function () {
+                    alert(this.aa);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<p aa="ljko">kjik</p>
+<p aa="ljko">kjik</p>
+<p aa="ljko">kjik</p>
+<b aa="ljko">kjik</b>
+<b aa="ljko">kjik</b>
+<b aa="ljko">kjik</b>
+<i aa="ljko">kjik</i>
+<i aa="ljko">kjik</i>
+<i aa="ljko">kjik</i>
+</body>
+</html>

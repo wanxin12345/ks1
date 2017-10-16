@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div,a,p{
+            width: 100px;
+            height: 100px;
+            background: #36c;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var div = document.getElementsByTagName('div');
+            var a = document.getElementsByTagName('a');
+            var p = document.getElementsByTagName('p');
+            var i=0;
+            var aa=0;
+            var bb=0;
+            while(i<div.length){
+               div[i].onclick= function () {
+                   alert(i);
+               }
+                i++;
+            }
+            while(aa<a.length){
+                a[aa].onclick= function () {
+                    alert(aa);
+                }
+                aa++;
+            }
+            while(bb<p.length){
+                p[bb].onclick= function () {
+                    alert(bb);
+                }
+                bb++;
+            }
+        }
+    </script>
+</head>
+<body>
+<div></div><div></div><div></div><div></div><div></div><br>
+<a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><br>
+<p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+</body>
+</html>
